@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+
+header{
+    background-color: rgba(255, 127, 80, 0.733);
+    height: 70px;
+    z-index: 100 !important;
+    box-shadow: 2px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+a{
+    text-decoration: none;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.contenedor ul, .contenedor input, .contenedor label{
+    float: right;
+}
+
+.contenedor label, .contenedor input{
+    display: none;
+}
+
+.contenedor label {
+        color: white;
+        margin-top: -52px;
+        padding: 10px;
+        font-size: 30px;
+}
+.contenedor ul {
+    margin-top: -35px;
+}
+
+.contenedor ul li {
+    display: inline;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+
+.contenedor a {
+    color: black;
+}
+
+.contenedor h1 {
+    font-size: 35px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+/* Media querys */
+
+@media(max-width: 767px) {
+
+    .contenedor ul {
+        background-color: rgba(95, 158, 160, 0.625);
+        width: 100%;
+        height: 100vh;
+        margin-top: 4px;
+        transform: translateX(-100%);
+        transition: all .5s;
+    }
+
+    .contenedor input:checked~.lista {
+        transform: translateX(0%);
+    }
+
+    .contenedor ul li {
+        display: block;
+        padding: 10px;
+        margin-left: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.51);
+    }
+
+    .contenedor label {
+        display: block;
+    }
+
+    /* Hero */
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 94vh;
+    background-image: url(imgcss.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -60px;
+    z-index: -1;
+}
+}
+
+
+
+
